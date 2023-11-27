@@ -1,0 +1,83 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background: #262a2f;
+}
+.container{
+  width: 400px;
+  padding: 25px 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #fff;
+  border-radius: 10px;
+}
+.container h1{
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.container input{
+  height: 60px;
+  width: 100%;
+  outline: none;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 20px;
+  border: 1px solid #999;
+  transition: all 0.3s ease;
+}
+.container button{
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #999;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px 0px;
+  background: #262a2f;
+}
+#imgBox{
+  width: 200px;
+  border-radius: 5px;
+  max-height: 0;
+  overflow: hidden;
+  margin: auto;
+  transition: max-height 1s ease;
+}
+#imgBox img{
+  width: 100%;
+  margin-top: 10px;
+}
+#imgBox.show-img{
+  max-height: 300px;
+  margin: 10px auto;
+}
+.error{
+  animation: shake 0.1s linear 8;
+}
+@keyframes shake{
+  0%{
+    transform: translateX(0);
+  }
+  25%{
+    transform: translateX(-2px);
+  }
+  50%{
+    transform: translateX(0px);
+  }
+  75%{
+    transform: translateX(-2px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
